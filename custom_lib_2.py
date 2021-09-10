@@ -12,7 +12,7 @@ import pandas as pd
 #update variable accordingly
 URL="127.0.0.1:8081"
 
-scope_url="https://virtuestech.com/"
+scope_url = os.environ.get('SCAN_URL')
 
 headers = { "accept": "*/*", "Content-Type": "application/json","Connection": "close"}
 
